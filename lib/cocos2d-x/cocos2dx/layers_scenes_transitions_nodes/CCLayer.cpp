@@ -890,4 +890,73 @@ void CCLayerMultiplex::switchToAndReleaseMe(unsigned int n)
     this->addChild((CCNode*)m_pLayers->objectAtIndex(n));
 }
 
+CCBanPenetrateTouchLayer::CCBanPenetrateTouchLayer()
+{
+
+}
+
+CCBanPenetrateTouchLayer::~CCBanPenetrateTouchLayer()
+{
+
+}
+
+
+CCBanPenetrateTouchLayer* CCBanPenetrateTouchLayer::create()
+{
+	CCBanPenetrateTouchLayer *pRet = new CCBanPenetrateTouchLayer();
+	if (pRet && pRet->init())
+	{
+		pRet->autorelease();
+		return pRet;
+	}
+	else
+	{
+		CC_SAFE_DELETE(pRet);
+		return NULL;
+	}
+}
+
+bool CCBanPenetrateTouchLayer::init()
+{
+	if (!CCLayer::init())
+	{
+		return false;
+	}
+
+	return true;
+}
+
+bool CCBanPenetrateTouchLayer::ccTouchBegan( CCTouch *pTouch, CCEvent *pEvent )
+{
+	return true;
+}
+
+void CCBanPenetrateTouchLayer::ccTouchMoved( CCTouch *pTouch, CCEvent *pEvent )
+{
+
+}
+
+void CCBanPenetrateTouchLayer::ccTouchEnded( CCTouch *pTouch, CCEvent *pEvent )
+{
+
+}
+
+void CCBanPenetrateTouchLayer::onEnter()
+{
+	CCLayer::onEnter();
+
+	CCDirector::sharedDirector()->getTouchDispatcher()->addTargetedDelegate(this, -128, true);
+	CCLog("addTargetedDelegate CCBanPenetrateTouchLayer");
+}
+
+void CCBanPenetrateTouchLayer::onExit()
+{
+	CCDirector::sharedDirector()->getTouchDispatcher()->removeDelegate(this);
+	CCLog("removeDelegate CCBanPenetrateTouchLayer");
+
+	CCLayer::onExit();
+}
+
+
+
 NS_CC_END

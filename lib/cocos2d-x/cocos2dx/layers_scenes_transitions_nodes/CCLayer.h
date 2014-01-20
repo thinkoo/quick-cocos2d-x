@@ -349,6 +349,23 @@ public:
     void switchToAndReleaseMe(unsigned int n);
 };
 
+class CC_DLL CCBanPenetrateTouchLayer : public CCLayer
+{
+public:
+	static CCBanPenetrateTouchLayer* create();
+
+	CCBanPenetrateTouchLayer();
+	~CCBanPenetrateTouchLayer();
+public:
+	virtual bool init();
+	virtual bool ccTouchBegan(CCTouch *pTouch, CCEvent *pEvent);
+	virtual void ccTouchMoved(CCTouch *pTouch, CCEvent *pEvent);
+	virtual void ccTouchEnded(CCTouch *pTouch, CCEvent *pEvent);
+
+	virtual void onEnter();
+    virtual void onExit();
+};
+
 
 // end of layer group
 /// @}

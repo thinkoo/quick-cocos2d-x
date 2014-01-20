@@ -175,5 +175,10 @@ class CCLayerMultiplex : public CCLayer
     void switchToAndReleaseMe(unsigned int n);
 };
 
+class CCBanPenetrateTouchLayer : public CCLayer
+{
+    static CCBanPenetrateTouchLayer* create();
+};
+
 // end of layer group
 /// @}

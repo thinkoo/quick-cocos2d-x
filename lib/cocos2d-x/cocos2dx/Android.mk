@@ -31,6 +31,7 @@ cocoa/CCAffineTransform.cpp \
 cocoa/CCGeometry.cpp \
 cocoa/CCAutoreleasePool.cpp \
 cocoa/CCDictionary.cpp \
+cocoa/CCIni.cpp \
 cocoa/CCNS.cpp \
 cocoa/CCObject.cpp \
 cocoa/CCSet.cpp \

@@ -1,5 +1,6 @@
 #include "CCIni.h"
 #include "platform/CCFileUtils.h"
+#include <stdlib.h>
 
 #define CC_MAX_PATH          260
 

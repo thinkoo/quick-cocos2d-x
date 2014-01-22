@@ -60,6 +60,7 @@ THE SOFTWARE.
 // cocoa
 #include "cocoa/CCAffineTransform.h"
 #include "cocoa/CCDictionary.h"
+#include "cocoa/CCIni.h"
 #include "cocoa/CCObject.h"
 #include "cocoa/CCArray.h"
 #include "cocoa/CCGeometry.h"

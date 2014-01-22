@@ -38,6 +38,7 @@ local CCObjectTypes = {
     "CCDeccelAmplitude",
     "CCDelayTime",
     "CCDictionary",
+    "CCIni",
     "CCDirector",
     "CCDouble",
     "CCDrawNode",

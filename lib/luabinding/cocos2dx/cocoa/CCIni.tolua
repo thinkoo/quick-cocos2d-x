@@ -1,0 +1,10 @@
+
+class CCIniReader: public CCObject
+{
+	static CCIniReader* createFromData(unsigned char *pData, int nSize);
+	static CCIniReader* createFromFile( const char *szPath );
+
+	std::string getValue(const char *szSection, const char *szKey, const char *szDefault);
+	int getValue(const char *szSection, const char *szKey, int nDefault);
+	float getValue(const char *szSection, const char *szKey, float nDefault);
+};

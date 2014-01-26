@@ -45,7 +45,7 @@ end
 local scale, wscale, hscale = 1, 1, 1
 if type(CONFIG_SCREEN_AUTOSCALE) == "function" then
     CONFIG_SCREEN_AUTOSCALE(w, h)
-    glview:setDesignResolutionSize(CONFIG_SCREEN_WIDTH, CONFIG_SCREEN_HEIGHT, kResolutionNoBorder)
+    -- glview:setDesignResolutionSize(CONFIG_SCREEN_WIDTH, CONFIG_SCREEN_HEIGHT, kResolutionNoBorder)
 elseif CONFIG_SCREEN_AUTOSCALE then
     scale, wscale, hscale = checkScale(w, h)
 

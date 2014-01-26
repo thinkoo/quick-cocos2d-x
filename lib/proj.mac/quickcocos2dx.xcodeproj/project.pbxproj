@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A5960C111894BD5C00CE9AE2 /* CCIni.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5960C0F1894BD5C00CE9AE2 /* CCIni.cpp */; };
 		F411F3E1175CEAFC00EF549A /* libluajit2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F411F3E0175CEAFC00EF549A /* libluajit2.a */; };
 		F41D98F417F08B85007171D8 /* WebSocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F41D98F217F08B85007171D8 /* WebSocket.cpp */; };
 		F41D98FC17F08B9E007171D8 /* libwebsockets.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F41D98FB17F08B9E007171D8 /* libwebsockets.a */; };
@@ -325,6 +326,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A5960C0F1894BD5C00CE9AE2 /* CCIni.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCIni.cpp; sourceTree = "<group>"; };
+		A5960C101894BD5C00CE9AE2 /* CCIni.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCIni.h; sourceTree = "<group>"; };
 		F411F3DB175CEAFC00EF549A /* lauxlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lauxlib.h; sourceTree = "<group>"; };
 		F411F3DC175CEAFC00EF549A /* lua.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lua.h; sourceTree = "<group>"; };
 		F411F3DD175CEAFC00EF549A /* luaconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = luaconf.h; sourceTree = "<group>"; };
@@ -1976,6 +1979,8 @@
 		F4E87F471770071500577406 /* cocoa */ = {
 			isa = PBXGroup;
 			children = (
+				A5960C0F1894BD5C00CE9AE2 /* CCIni.cpp */,
+				A5960C101894BD5C00CE9AE2 /* CCIni.h */,
 				F4E87F481770071500577406 /* CCAffineTransform.cpp */,
 				F4E87F491770071500577406 /* CCAffineTransform.h */,
 				F4E87F4A1770071500577406 /* CCArray.cpp */,
@@ -2745,6 +2750,7 @@
 				F4E8805E1770071600577406 /* neon_matrix_impl.c in Sources */,
 				F41D98F417F08B85007171D8 /* WebSocket.cpp in Sources */,
 				F4E8805F1770071600577406 /* plane.c in Sources */,
+				A5960C111894BD5C00CE9AE2 /* CCIni.cpp in Sources */,
 				F4E880601770071600577406 /* quaternion.c in Sources */,
 				F4E880611770071600577406 /* ray2.c in Sources */,
 				F4E880621770071600577406 /* utility.c in Sources */,
